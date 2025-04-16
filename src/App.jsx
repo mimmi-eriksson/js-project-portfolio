@@ -1,10 +1,13 @@
-import FeaturedProjects from "./components/FeaturedProjects"
+import ProjectsSection from "./sections/ProjectsSection"
+import projects from "./data/projects.json"
 
 export const App = () => {
   return (
     <>
       <h1>Portfolio</h1>
-      <FeaturedProjects />
+      <ProjectsSection
+        projects={projects.projects}
+      />
     </>
   )
 }
