@@ -1,23 +1,35 @@
 {
-  "skills": {
-    "code": [
-      "HTML5",
-      "CSS3",
-      "Javascript ES6",
-      "React",
-      "GitHub",
-      "Python"
-    ],
-    "toolbox": [
-      "Figma",
-      "Slack"
-    ],
-    "upcoming": [
-      "Node.js"
-    ],
-    "other": [
-      "Agile methodology",
-      "Project management"
-    ]
-  }
+  "skills": [
+    {
+      "title": "Code",
+      "skills": [
+        "HTML5",
+        "CSS3",
+        "Javascript ES6",
+        "React",
+        "GitHub",
+        "Python"
+      ]
+    },
+    {
+      "title": "Toolbox",
+      "skills": [
+        "Figma",
+        "Slack"
+      ]
+    },
+    {
+      "title": "Upcoming",
+      "skills": [
+        "Node.js"
+      ]
+    },
+    {
+      "title": "Other",
+      "skills": [
+        "Agile methodology",
+        "Project management"
+      ]
+    }
+  ]
 }
