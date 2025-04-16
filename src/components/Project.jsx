@@ -1,6 +1,6 @@
 import ButtonLink from "./ButtonLink.jsx"
 
-const Project = ({ name, image, description, tags, netlify, github }) => {
+const Project = ({ id, name, image, description, tags, netlify, github }) => {
   return (
     <article>
       <img src={image} alt={name} />
@@ -15,7 +15,7 @@ const Project = ({ name, image, description, tags, netlify, github }) => {
           </ul>
         </div>
         <div>
-          <ButtonLink text="Live demo" link={netlify} icon="../assets/globe.png" />
+          <ButtonLink text="Live demo" link={netlify} icon="../assets/globe-icon.png" />
           <ButtonLink text="View the code" link={github} icon="../assets/github-icon.png" />
         </div>
       </div>

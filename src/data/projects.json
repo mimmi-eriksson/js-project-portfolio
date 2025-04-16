@@ -1,19 +1,36 @@
 {
   "projects": [
     {
-      "name": "Business site",
-      "image": "https://images.unsplash.com/photo-1557008075-7f2c5efa4cfd?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2497&q=80",
+      "name": "Business Site",
+      "id": 1,
+      "image": "../assets/business-site.png",
       "tags": [
         "HTML5",
         "CSS3",
         "JavaScript"
       ],
-      "netlify": "link",
-      "github": "link"
+      "netlify": "https://starlight-unicorn-rentals.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-business-site",
+      "description": "A responsive business site with a working hamburger menu created to learn the basics of responsive web design, CSS Grid and Flexbox layout, and DOM manipulation."
     },
     {
-      "name": "Weather app",
-      "image": "https://images.unsplash.com/photo-1520792532857-293bd046307a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2370&q=80",
+      "name": "Recipe App",
+      "id": 2,
+      "image": "../assets/recipe-app.png",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "APIs"
+      ],
+      "netlify": "https://mimmis-recipe-library.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-recipe-library",
+      "description": "A functional recipe app that fetches recipes from an API and let users find recipes based on different filters and sorting options."
+    },
+    {
+      "name": "Weather App",
+      "id": 3,
+      "image": "../assets/weather-app.png",
       "tags": [
         "HTML5",
         "CSS3",
@@ -22,7 +39,22 @@
         "APIs"
       ],
       "netlify": "link",
-      "github": "link"
+      "github": "https://github.com/mimmi-eriksson/js-project-weather-app",
+      "description": "A working weather app that fetches data from a weather API to display today's weather and a 5-day forecast. Includes a search bar where the user can search for a specific city."
+    },
+    {
+      "name": "Web Accessibility Quiz",
+      "id": 4,
+      "image": "../assets/accessibility-quiz.png",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "Web Accessibility"
+      ],
+      "netlify": "https://web-accessibility-quiz.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-accessibility",
+      "description": "A quiz about web accessibility where common accessibility guidelines were followed. The site is user-friendly and works for everyone, including those using screen readers, keyboards, and other assistive technologies."
     }
   ]
 }
