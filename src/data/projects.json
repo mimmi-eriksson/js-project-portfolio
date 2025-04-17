@@ -41,7 +41,7 @@
         "TypeScript",
         "APIs"
       ],
-      "netlify": "link",
+      "netlify": "https://rainchecker.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-weather-app",
       "description": "A working weather app that fetches data from a weather API to display today's weather and a 5-day forecast. Includes a search bar where the user can search for a specific city."
     },

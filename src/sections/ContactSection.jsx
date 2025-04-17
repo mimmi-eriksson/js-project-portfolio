@@ -15,8 +15,8 @@ const ContactSection = () => {
           </div>
           <div>
             <ul>
-              <li><ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="../assets/linkedin-icon.png" text="LinkedIn profile" /></li>
-              <li><ButtonSocial link="https://github.com/mimmi-eriksson" icon="../assets/github-icon.png" text="GitHub profile" /></li>
+              <li><ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="../assets/linkedin-icon.svg" text="LinkedIn profile" /></li>
+              <li><ButtonSocial link="https://github.com/mimmi-eriksson" icon="../assets/github-icon.svg" text="GitHub profile" /></li>
             </ul>
           </div>
         </div>

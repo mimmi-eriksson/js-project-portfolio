@@ -10,7 +10,7 @@ const IntroSection = () => {
           </div>
           <img src="../assets/profile-picture.jpg" alt="profile picture" />
         </div>
-        <a href="#techSection"><img src="../assets/arrow.png" alt="go to next section" /></a>
+        <a href="#techSection"><img src="../assets/arrow.svg" alt="go to next section" /></a>
       </div>
     </section>
   )

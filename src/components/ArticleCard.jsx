@@ -13,7 +13,7 @@ const ArticleCard = ({ article }) => {
         <CardHeading title={article.title} />
       </div>
       <p>{article.text}</p>
-      <ButtonLink text="Read article" link={article.link} icon="../assets/article-icon.png" />
+      <ButtonLink text="Read article" link={article.link} icon="../assets/article-icon.svg" />
     </article>
   )
 }

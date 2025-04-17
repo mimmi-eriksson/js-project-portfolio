@@ -18,8 +18,8 @@ const ProjectCard = ({ project }) => {
           </ul>
         </div>
         <div>
-          <ButtonLink text="Live demo" link={project.netlify} icon="../assets/globe-icon.png" />
-          <ButtonLink text="View the code" link={project.github} icon="../assets/github-icon.png" />
+          <ButtonLink text="Live demo" link={project.netlify} icon="../assets/globe-icon.svg" />
+          <ButtonLink text="View the code" link={project.github} icon="../assets/github-icon.svg" />
         </div>
       </div>
     </article>
