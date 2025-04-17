@@ -1,10 +1,12 @@
+import CardHeading from "../typhography/CardHeading.jsx"
+
 const SkillsCard = ({ skillGroup }) => {
   return (
     <div>
-      <h3>{skillGroup.title}</h3>
+      <CardHeading title={skillGroup.title} />
       <ul>
         {skillGroup.skills.map(skill => {
-          return <li>{skill}</li>
+          return <li key={skill}>{skill}</li>
         })}
       </ul>
     </div>

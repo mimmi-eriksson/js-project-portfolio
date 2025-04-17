@@ -1,13 +1,17 @@
 import SkillsCard from "../components/SkillsCard"
+import SectionHeading from "../typhography/SectionHeading"
 
 const SkillsSection = ({ skills }) => {
-  console.log(skills)
   return (
-    <section>
+    <section id="skillsSection">
       <div>
-        <h2>Skills</h2>
+        <SectionHeading title="Skills" />
         <div>
-          {/* CONTINUE HERE */}
+          {skills.map(skillGroup => {
+            return (
+              <SkillsCard key={skillGroup.title} skillGroup={skillGroup} />
+            )
+          })}
         </div>
       </div>
     </section>

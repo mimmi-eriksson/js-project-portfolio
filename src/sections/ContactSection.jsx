@@ -1,10 +1,11 @@
 import ButtonSocial from "../components/ButtonSocial"
+import SectionHeading from "../typhography/SectionHeading"
 
 const ContactSection = () => {
   return (
-    <section>
+    <section id="contactSection">
       <div>
-        <h2>Let's Talk</h2>
+        <SectionHeading title="Let's Talk" />
         <div>
           <img src="../assets/profile-picture.jpg" alt="profile picture" />
           <div>

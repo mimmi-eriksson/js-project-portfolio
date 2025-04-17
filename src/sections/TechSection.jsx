@@ -1,7 +1,9 @@
+import SectionHeading from "../typhography/SectionHeading"
+
 const TechSection = (tech) => {
   return (
     <section id="techSection">
-      <h2>Tech</h2>
+      <SectionHeading title="Tech" />
       <h3>{tech.tech.join(", ")}</h3>
     </section>
   )

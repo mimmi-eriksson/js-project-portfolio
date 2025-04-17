@@ -4,6 +4,7 @@
       "name": "Business Site",
       "id": 1,
       "image": "../assets/business-site.png",
+      "altText": "Business Site Thumbnail",
       "tags": [
         "HTML5",
         "CSS3",
@@ -17,6 +18,7 @@
       "name": "Recipe App",
       "id": 2,
       "image": "../assets/recipe-app.png",
+      "altText": "Recipe App Thumbnail",
       "tags": [
         "HTML5",
         "CSS3",
@@ -31,6 +33,7 @@
       "name": "Weather App",
       "id": 3,
       "image": "../assets/weather-app.png",
+      "altText": "Weather App Thumbnail",
       "tags": [
         "HTML5",
         "CSS3",
@@ -46,6 +49,7 @@
       "name": "Web Accessibility Quiz",
       "id": 4,
       "image": "../assets/accessibility-quiz.png",
+      "altText": "Web Accessibility Quiz Thumbnail",
       "tags": [
         "HTML5",
         "CSS3",

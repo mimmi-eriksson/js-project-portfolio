@@ -1,13 +1,14 @@
 import ButtonLink from "./ButtonLink.jsx"
 import Tag from "./Tag.jsx"
+import CardHeading from "../typhography/CardHeading.jsx"
 import "./ProjectCard.css"
 
 const ProjectCard = ({ project }) => {
   return (
     <article>
-      <img src={project.image} alt={project.name} />
+      <img src={project.image} alt={project.altText} />
       <div>
-        <h3>{project.name}</h3>
+        <CardHeading title={project.name} />
         <p>{project.description}</p>
         <div>
           <ul>

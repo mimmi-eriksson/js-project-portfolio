@@ -1,6 +1,6 @@
 const IntroSection = () => {
   return (
-    <section>
+    <section id="introSection">
       <div>
         <div>
           <div>
