@@ -7,7 +7,7 @@
       "altText": "code on a screen",
       "date": "March 2025",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "link": "link"
+      "link": "#"
     },
     {
       "id": 2,
@@ -16,7 +16,7 @@
       "altText": "code on a screen",
       "date": "April 2025",
       "text": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      "link": "link"
+      "link": "#"
     }
   ]
 }
