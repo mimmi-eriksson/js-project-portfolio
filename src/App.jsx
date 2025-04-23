@@ -15,7 +15,7 @@ import articles from "./data/articles.json"
 const App = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <IntroSection />
       <TechSection tech={tech.tech} />
       <ProjectsSection
@@ -24,7 +24,7 @@ const App = () => {
       <SkillsSection skills={skills.skills} />
       <ArticlesSection articles={articles.articles} />
       <ContactSection />
-      <Footer />
+      {/* <Footer /> */}
     </>
   )
 }
