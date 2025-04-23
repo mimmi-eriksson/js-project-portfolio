@@ -1,5 +1,22 @@
+import styled from "styled-components"
+import theme from "../styles/theme.js"
+import media from "../styles/media.js"
+
+const StyledHeading = styled.h2`
+  font-family: ${theme.fonts.headings};
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 110%;
+  text-align: center;
+
+  @media ${media.desktop} {
+    font-size: 5em;
+  }
+
+`
+
 const SectionHeading = ({ title }) => {
-  return <h2>{title}</h2>
+  return <StyledHeading>{title}</StyledHeading>
 }
 
 export default SectionHeading
