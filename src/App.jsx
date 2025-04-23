@@ -12,19 +12,26 @@ import projects from "./data/projects.json"
 import skills from "./data/skills.json"
 import articles from "./data/articles.json"
 
+import GlobalStyle from "./styles/GlobalStyle.jsx"
+import { ThemeProvider } from "styled-components"
+import theme from "./styles/theme.js"
+
 const App = () => {
   return (
     <>
-      {/* <Header /> */}
-      <IntroSection />
-      <TechSection tech={tech.tech} />
-      <ProjectsSection
-        projects={projects.projects}
-      />
-      <SkillsSection skills={skills.skills} />
-      <ArticlesSection articles={articles.articles} />
-      <ContactSection />
-      {/* <Footer /> */}
+      <ThemeProvider theme={theme}>
+        <GlobalStyle />
+        {/* <Header /> */}
+        <IntroSection />
+        <TechSection tech={tech.tech} />
+        <ProjectsSection
+          projects={projects.projects}
+        />
+        <SkillsSection skills={skills.skills} />
+        <ArticlesSection articles={articles.articles} />
+        <ContactSection />
+        {/* <Footer /> */}
+      </ThemeProvider>
     </>
   )
 }
