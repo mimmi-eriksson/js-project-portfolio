@@ -7,11 +7,9 @@ const StyledHeading = styled.h3`
   font-weight: 500;
 
   @media ${media.desktop} {
-    font-size: 30px;
+    font-size: 1.875em;
   }
-
 `
-
 
 const CardHeading = ({ title }) => {
   return <StyledHeading>{title}</StyledHeading>

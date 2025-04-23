@@ -10,7 +10,7 @@ const Card = styled.article`
   flex-direction: column;
   gap: ${theme.spacings.medium};
   font-family: ${theme.fonts.body};
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
 
   @media ${media.tablet} {
@@ -19,8 +19,8 @@ const Card = styled.article`
   }
 
   @media ${media.desktop} {
-    gap: 16px;
-    font-size: 18px;
+    gap: ${theme.spacings.small};
+    font-size: 1.125em;
   }
 `
 
@@ -28,6 +28,7 @@ const CardImage = styled.img`
   height: 200px;
   width: 100%;
   object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(31, 0, 124, 0.25);
 
   @media ${media.tablet} {
     width: 200px;
