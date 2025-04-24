@@ -82,8 +82,8 @@ const ContactSection = () => {
           <InfoLink href="mailto:mimmi.aj.eriksson@gmail.com">mimmi.aj.eriksson@gmail.com</InfoLink>
         </InfoWrapper>
         <ButtonsWrapper>
-          <li><ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="../assets/linkedin-icon.svg" text="LinkedIn profile" /></li>
-          <li><ButtonSocial link="https://github.com/mimmi-eriksson" icon="../assets/github-icon.svg" text="GitHub profile" /></li>
+          <ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="/assets/linkedin-btn.svg" text="LinkedIn profile" />
+          <ButtonSocial link="https://github.com/mimmi-eriksson" icon="/assets/github-btn.svg" text="GitHub profile" />
         </ButtonsWrapper>
       </ContentWrapper>
     </SectionWrapper>

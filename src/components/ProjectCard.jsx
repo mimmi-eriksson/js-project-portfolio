@@ -10,7 +10,6 @@ const Card = styled.article`
   flex-direction: column;
   gap: ${theme.spacings.medium};
   font-family: ${theme.fonts.body};
-  font-size: 1em;
   font-weight: 400;
 
   @media ${media.tablet} {
@@ -19,8 +18,8 @@ const Card = styled.article`
   }
 
   @media ${media.desktop} {
+    flex-direction: row;
     gap: ${theme.spacings.small};
-    font-size: 1.125em;
   }
 `
 
@@ -37,6 +36,7 @@ const CardImage = styled.img`
 
   @media ${media.desktop} {
     width: 408px;
+    height: 280px;
   }
 `
 
@@ -51,6 +51,10 @@ const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
   gap: ${theme.spacings.small};
+`
+
+const Description = styled.p`
+  font-size: 1.125em;
 `
 
 const TagsWrapper = styled.ul`
@@ -70,6 +74,10 @@ const ButtonWrapper = styled.div`
     flex-direction: row;
     gap: 2rem;
   }
+  @media ${media.desktop} {
+    flex-direction: row;
+    gap: 2rem;
+  }
 `
 
 const ProjectCard = ({ project }) => {
@@ -79,7 +87,7 @@ const ProjectCard = ({ project }) => {
       <ContentWrapper>
         <InfoWrapper>
           <CardHeading title={project.name} />
-          <p>{project.description}</p>
+          <Description>{project.description}</Description>
           <TagsWrapper>
             {project.tags.map(tag => {
               return <Tag key={tag} tag={tag} />
