@@ -21,7 +21,7 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
-        {/* <Header /> */}
+        <Header />
         <IntroSection />
         <TechSection tech={tech.tech} />
         <ProjectsSection

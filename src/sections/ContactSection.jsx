@@ -4,12 +4,14 @@ import SmallHeading from "../typhography/SmallHeading"
 import styled from "styled-components"
 import media from "../styles/media.js"
 
-const SectionWrapper = styled.section`
+const SectionWrapper = styled.div`
+  min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.secondary};
   padding: ${({ theme }) => theme.spacings.xLarge} ${({ theme }) => theme.spacings.small};
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: ${({ theme }) => theme.spacings.large};
 `
 
@@ -58,25 +60,27 @@ const ButtonsWrapper = styled.ul`
 
 const ContactSection = () => {
   return (
-    <SectionWrapper id="contactSection">
-      <SectionHeading title="Let's Talk" />
-      <ContentWrapper>
-        <ProfileImage src="../assets/profile-picture.jpg" alt="profile picture" />
-        <InfoWrapper>
-          <SmallHeading text={"Mimmi Eriksson"} />
-          <Link href="tel:+46709961552">
-            <SmallHeading text={"+46(0)709 96 15 52"} />
-          </Link>
-          <Link href="mailto:mimmi.aj.eriksson@gmail.com">
-            <SmallHeading text={"mimmi.aj.eriksson@gmail.com"} />
-          </Link>
-        </InfoWrapper>
-        <ButtonsWrapper>
-          <ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="/assets/linkedin-btn.svg" text="LinkedIn profile" />
-          <ButtonSocial link="https://github.com/mimmi-eriksson" icon="/assets/github-btn.svg" text="GitHub profile" />
-        </ButtonsWrapper>
-      </ContentWrapper>
-    </SectionWrapper>
+    <section id="contactSection">
+      <SectionWrapper>
+        <SectionHeading title="Let's Talk" />
+        <ContentWrapper>
+          <ProfileImage src="../assets/profile-picture.jpg" alt="profile picture" />
+          <InfoWrapper>
+            <SmallHeading text={"Mimmi Eriksson"} />
+            <Link href="tel:+46709961552">
+              <SmallHeading text={"+46(0)709 96 15 52"} />
+            </Link>
+            <Link href="mailto:mimmi.aj.eriksson@gmail.com">
+              <SmallHeading text={"mimmi.aj.eriksson@gmail.com"} />
+            </Link>
+          </InfoWrapper>
+          <ButtonsWrapper>
+            <ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="/assets/linkedin-btn.svg" text="LinkedIn profile" />
+            <ButtonSocial link="https://github.com/mimmi-eriksson" icon="/assets/github-btn.svg" text="GitHub profile" />
+          </ButtonsWrapper>
+        </ContentWrapper>
+      </SectionWrapper>
+    </section>
   )
 }
 

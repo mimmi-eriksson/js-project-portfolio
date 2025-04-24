@@ -3,7 +3,8 @@ import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
 import media from "../styles/media.js"
 
-const SectionWrapper = styled.section`
+const SectionWrapper = styled.div`
+  min-height: 100vh;
   background-color: ${({ theme }) => theme.colors.primary};
   color: ${({ theme }) => theme.colors.secondary};
   padding: ${({ theme }) => theme.spacings.large} 0;
@@ -49,18 +50,20 @@ const StyledSkillCard = styled.div`
 
 const SkillsSection = ({ skills }) => {
   return (
-    <SectionWrapper id="skillsSection">
-      <SectionHeading title="Skills" />
-      <ContentWrapper>
-        {skills.map(skillGroup => {
-          return (
-            <StyledSkillCard key={skillGroup.title}>
-              <SkillsCard skillGroup={skillGroup} />
-            </StyledSkillCard>
-          )
-        })}
-      </ContentWrapper>
-    </SectionWrapper>
+    <section id="skillsSection">
+      <SectionWrapper>
+        <SectionHeading title="Skills" />
+        <ContentWrapper>
+          {skills.map(skillGroup => {
+            return (
+              <StyledSkillCard key={skillGroup.title}>
+                <SkillsCard skillGroup={skillGroup} />
+              </StyledSkillCard>
+            )
+          })}
+        </ContentWrapper>
+      </SectionWrapper>
+    </section>
   )
 }
 

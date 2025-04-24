@@ -1,6 +1,7 @@
 import MainHeading from "../typhography/MainHeading"
 import SmallHeading from "../typhography/SmallHeading"
 import BodyText from "../typhography/BodyText"
+import ArrowLink from "../components/ArrowLink"
 import styled from "styled-components"
 import media from "../styles/media.js"
 
@@ -92,31 +93,6 @@ const ProfileImage = styled.img`
     width: 490px;
   }
 `
-const ArrowLink = styled.a`
-  display: block;
-  text-align: center;
-`
-const Arrow = styled.img`
-  position: relative;
-  top: 0;
-  animation: scrollAnimation 1s ease-out infinite alternate;
-
-  @keyframes scrollAnimation {
-    0% {
-      top: 0;
-    }
-    25% {
-      top: 0;
-    }
-    75% {
-      top: 16px;
-    }
-    100% {
-      top: 16px;
-    }
-  }
-`
-
 
 const IntroSection = () => {
   return (
@@ -135,9 +111,7 @@ const IntroSection = () => {
             <ProfileImage src="../assets/profile-picture.jpg" alt="profile picture" />
           </ImageWrapper>
         </ContentWrapper>
-        <ArrowLink href="#techSection">
-          <Arrow src="assets/arrow.svg" alt="go to next section" />
-        </ArrowLink>
+        <ArrowLink link="#techSection" />
       </SectionWrapper>
     </section>
   )
