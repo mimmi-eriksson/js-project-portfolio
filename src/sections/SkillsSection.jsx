@@ -1,16 +1,15 @@
 import SkillsCard from "../components/SkillsCard"
 import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const SectionWrapper = styled.section`
-  background-color: ${theme.colors.primary};
-  color: ${theme.colors.secondary};
-  padding: ${theme.spacings.large} 0;
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
+  padding: ${({ theme }) => theme.spacings.large} 0;
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.large};
+  gap: ${({ theme }) => theme.spacings.large};
 
   @media ${media.desktop} {
     padding: 15.5rem 16.5rem;
@@ -30,20 +29,20 @@ const ContentWrapper = styled.div`
 `
 
 const StyledSkillCard = styled.div`
-  padding: ${theme.spacings.medium} 0;
+  padding: ${({ theme }) => theme.spacings.medium} 0;
   width: 200px;
 
   &:not(:last-of-type) {
-    border-bottom: 2px solid ${theme.colors.secondary};
+    border-bottom: 2px solid ${({ theme }) => theme.colors.secondary};
   }
 
   @media ${media.desktop} {
     width: 100%;
-    padding: 0 ${theme.spacings.medium};
+    padding: 0 ${({ theme }) => theme.spacings.medium};
 
     &:not(:last-of-type) {
       border-bottom: none;
-      border-right: 2px solid ${theme.colors.secondary};
+      border-right: 2px solid ${({ theme }) => theme.colors.secondary};
     }
   }
 `

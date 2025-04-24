@@ -1,14 +1,13 @@
 import ArticleCard from "../components/ArticleCard"
 import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const SectionWrapper = styled.section`
-  padding: ${theme.spacings.xLarge} ${theme.spacings.small};
+  padding: ${({ theme }) => theme.spacings.xLarge} ${({ theme }) => theme.spacings.small};
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.large};
+  gap: ${({ theme }) => theme.spacings.large};
 
   @media ${media.tablet} {
     padding-inline: 2rem;
@@ -23,7 +22,7 @@ const SectionWrapper = styled.section`
 const ArticlesWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.large};
+  gap: ${({ theme }) => theme.spacings.large};
   justify-content: space-between;
 
   @media ${media.desktop} {

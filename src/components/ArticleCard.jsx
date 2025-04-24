@@ -21,6 +21,7 @@ const ArticleImage = styled.img`
   height: 200px;
   width: 100%;
   object-fit: cover;
+  box-shadow: 2px 2px 5px rgba(31, 0, 124, 0.25);
 
   @media ${media.tablet} {
     height: 340px;

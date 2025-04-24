@@ -1,9 +1,8 @@
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const StyledHeading = styled.h2`
-  font-family: ${theme.fonts.headings};
+  font-family: ${({ theme }) => theme.fonts.headings};
   font-size: 3.75em;
   font-weight: 700;
   line-height: 110%;
