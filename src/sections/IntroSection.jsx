@@ -5,19 +5,34 @@ import styled from "styled-components"
 import media from "../styles/media.js"
 
 const SectionWrapper = styled.div`
+  min-height: 100vh;
   padding: ${({ theme }) => theme.spacings.large} ${({ theme }) => theme.spacings.medium};
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 `
 const ContentWrapper = styled.div`
+  max-width: 700px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  justify-content: space-between;
   gap: ${({ theme }) => theme.spacings.medium};
-  margin-bottom: 3rem;
+  margin-bottom: ${({ theme }) => theme.spacings.large};
 
+  @media ${media.tablet} {
+    gap: ${({ theme }) => theme.spacings.large};
+  }
   @media ${media.desktop} {
-    margin: ${({ theme }) => theme.spacings.xLarge};
+    max-width: 1200px;
     flex-direction: row;
-    gap: 6.25rem;
+    align-items: center;
+    /* gap: 5rem; */
+  }
+  @media (${media.desktopXL}) {
+    gap: 6.25rem; 
+    margin-bottom: 8rem;
   }
 `
 const InfoWrapper = styled.div`
@@ -28,40 +43,53 @@ const InfoWrapper = styled.div`
 `
 
 const ImageWrapper = styled.div`
+  width: 100%;
+  max-width: 300px;
   position: relative;
   align-self: center;
+
+  @media ${media.tablet} {
+    max-width: 400px;
+  }
+  @media ${media.desktop} {
+    max-width: 400px;
+  }
+  @media ${media.desktopXL} {
+    max-width: 500px;
+    width: 500px;
+  }
 `
 const ImageBorder = styled.div`
-  width: 300px;
-  height: 300px;
+  aspect-ratio: 1 / 1;
   background-color: ${({ theme }) => theme.colors.primary};
   clip-path: circle(50%);
 
-  @media ${media.tablet} {
-    width: 400px;
-    height: 400px;
-  }
   @media ${media.desktop} {
+    width: 400px;
+  }
+  @media ${media.desktopXL} {
     width: 500px;
-    height: 500px;
   }
 `
 const ProfileImage = styled.img`
   position: absolute;
   top: 5px;
   left: 5px;
-  width: 290px;
-  height: 290px;
+  width: calc(100% - 10px);
+  aspect-ratio: 1 / 1;
+  max-width: 290px;
   object-fit: cover;
   clip-path: circle(50%);
 
   @media ${media.tablet} {
-    width: 390px;
-    height: 390px;
+    max-width: 390px;
   }
   @media ${media.desktop} {
+    max-width: 390px;
+  }
+  @media ${media.desktopXL} {
+    max-width: 490px;
     width: 490px;
-    height: 490px;
   }
 `
 const ArrowLink = styled.a`
