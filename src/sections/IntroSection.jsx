@@ -98,25 +98,22 @@ const ArrowLink = styled.a`
   text-align: center;
 `
 const Arrow = styled.img`
-  margin-bottom: 32px;
+  position: relative;
+  top: 0;
   animation: scrollAnimation 1s ease-out infinite alternate;
 
   @keyframes scrollAnimation {
     0% {
-      margin-top: 0;
-      margin-bottom: 32px;
+      top: 0;
     }
     25% {
-      margin-top: 0;
-      margin-bottom: 32px;
+      top: 0;
     }
     75% {
-      margin-top: 32px;
-      margin-bottom: 0;
+      top: 16px;
     }
     100% {
-      margin-top: 32px;
-      margin-bottom: 0;
+      top: 16px;
     }
   }
 `
