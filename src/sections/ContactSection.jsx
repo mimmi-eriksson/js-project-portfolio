@@ -1,22 +1,22 @@
 import ButtonSocial from "../components/ButtonSocial"
 import SectionHeading from "../typhography/SectionHeading"
+import SmallHeading from "../typhography/SmallHeading"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const SectionWrapper = styled.section`
-  background-color: ${theme.colors.primary};
-  color: ${theme.colors.secondary};
-  padding: ${theme.spacings.xLarge} ${theme.spacings.small};
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
+  padding: ${({ theme }) => theme.spacings.xLarge} ${({ theme }) => theme.spacings.small};
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.large};
+  gap: ${({ theme }) => theme.spacings.large};
 `
 
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.large};
+  gap: ${({ theme }) => theme.spacings.large};
   align-items: center;
 `
 
@@ -30,37 +30,23 @@ const ProfileImage = styled.img`
 const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.xSmall};
+  gap: ${({ theme }) => theme.spacings.xSmall};
   align-items: center;
-  font-family: ${theme.fonts.body};
 `
 
-const InfoText = styled.h3`
-  font-size: 1.25em;
-  font-weight: 500;
-
-  @media ${media.tablet} {
-    font-size: 1.5em;
-  }
-  @media ${media.desktop} {
-    font-size: 1.875em;
-  }
-`
-
-const InfoLink = styled.a`
+const Link = styled.a`
   text-decoration: none;
-  color: ${theme.colors.secondary};
-  font-size: 1.25em;
-  font-weight: 500;
+  color: ${({ theme }) => theme.colors.secondary};
 
+  @media ${media.mobile} {
+    > * {
+      font-size: 1.25em;
+    }
+    }
   @media (max-width: 330px) {
-    font-size: 1em;
-  }
-  @media ${media.tablet} {
-    font-size: 1.5em;
-  }
-  @media ${media.desktop} {
-    font-size: 1.875em;
+    > * {
+      font-size: 1em;
+    }
   }
 `
 const ButtonsWrapper = styled.ul`
@@ -77,9 +63,13 @@ const ContactSection = () => {
       <ContentWrapper>
         <ProfileImage src="../assets/profile-picture.jpg" alt="profile picture" />
         <InfoWrapper>
-          <InfoText>Mimmi Eriksson</InfoText>
-          <InfoLink href="tel:+46709961552">+46(0)709 96 15 52</InfoLink>
-          <InfoLink href="mailto:mimmi.aj.eriksson@gmail.com">mimmi.aj.eriksson@gmail.com</InfoLink>
+          <SmallHeading text={"Mimmi Eriksson"} />
+          <Link href="tel:+46709961552">
+            <SmallHeading text={"+46(0)709 96 15 52"} />
+          </Link>
+          <Link href="mailto:mimmi.aj.eriksson@gmail.com">
+            <SmallHeading text={"mimmi.aj.eriksson@gmail.com"} />
+          </Link>
         </InfoWrapper>
         <ButtonsWrapper>
           <ButtonSocial link="https://www.linkedin.com/in/mimmi-aj-eriksson/" icon="/assets/linkedin-btn.svg" text="LinkedIn profile" />

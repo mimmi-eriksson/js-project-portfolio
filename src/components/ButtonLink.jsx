@@ -1,21 +1,22 @@
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const StyledButton = styled.a`
-  background-color: ${theme.colors.ternary};
-  color: ${theme.colors.neutral};
+  background-color: ${({ theme }) => theme.colors.ternary};
+  color: ${({ theme }) => theme.colors.neutral};
   border-radius: 40px;
   display: flex;
   align-items: center;
   gap: 7px;
   padding-right: 16px;
   text-decoration: none;
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: 1em;
   font-weight: 500;
 
   &:hover {
-    background-color: ${theme.colors.primary};
-    color: ${theme.colors.secondary};
+    background-color: ${({ theme }) => theme.colors.primary};
+    color: ${({ theme }) => theme.colors.secondary};
   }
 
   &:hover img {
@@ -23,7 +24,7 @@ const StyledButton = styled.a`
   }
 
   @media ${media.desktop} {
-    font-size: 18px;
+    font-size: 1.125em;
   }
 `
 

@@ -5,14 +5,17 @@ const StyledHeading = styled.h3`
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1.5em;
   font-weight: 500;
+  line-height: normal;
 
   @media ${media.desktop} {
     font-size: 1.875em;
   }
 `
 
-const CardHeading = ({ title }) => {
-  return <StyledHeading>{title}</StyledHeading>
+const SmallHeading = ({ text }) => {
+  return (
+    <StyledHeading>{text}</StyledHeading>
+  )
 }
 
-export default CardHeading
+export default SmallHeading

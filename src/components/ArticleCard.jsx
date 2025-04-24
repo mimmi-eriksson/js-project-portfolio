@@ -1,16 +1,15 @@
 import ButtonLink from "./ButtonLink"
 import CardHeading from "../typhography/CardHeading.jsx"
+import BodyText from "../typhography/BodyText.jsx"
 import Tag from "./Tag"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 
 const Card = styled.article`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.medium};
-  font-family: ${theme.fonts.body};
+  gap: ${({ theme }) => theme.spacings.medium};
   align-items: flex-start;
 
   @media ${media.tablet} {
@@ -33,7 +32,7 @@ const ArticleImage = styled.img`
 const TitleWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.xSmall};
+  gap: ${({ theme }) => theme.spacings.xSmall};
   align-items: flex-start;
 `
 
@@ -47,7 +46,7 @@ const ArticleCard = ({ article }) => {
         </ul>
         <CardHeading title={article.title} />
       </TitleWrapper>
-      <p>{article.text}</p>
+      <BodyText text={article.text} />
       <ButtonLink text="Read article" link={article.link} icon="../assets/article-icon.svg" />
     </Card>
   )

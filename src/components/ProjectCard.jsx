@@ -1,16 +1,14 @@
 import ButtonLink from "./ButtonLink.jsx"
 import Tag from "./Tag.jsx"
 import CardHeading from "../typhography/CardHeading.jsx"
+import BodyText from "../typhography/BodyText.jsx"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const Card = styled.article`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.medium};
-  font-family: ${theme.fonts.body};
-  font-weight: 400;
+  gap: ${({ theme }) => theme.spacings.medium};
 
   @media ${media.tablet} {
     flex-direction: row;
@@ -19,7 +17,7 @@ const Card = styled.article`
 
   @media ${media.desktop} {
     flex-direction: row;
-    gap: ${theme.spacings.small};
+    gap: ${({ theme }) => theme.spacings.small};
   }
 `
 
@@ -43,18 +41,14 @@ const CardImage = styled.img`
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.medium};
+  gap: ${({ theme }) => theme.spacings.medium};
   justify-content: space-between;
 `
 
 const InfoWrapper = styled.div`
   display: flex;
   flex-direction: column;
-  gap: ${theme.spacings.small};
-`
-
-const Description = styled.p`
-  font-size: 1.125em;
+  gap: ${({ theme }) => theme.spacings.small};
 `
 
 const TagsWrapper = styled.ul`
@@ -68,7 +62,7 @@ const ButtonWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: ${theme.spacings.small};
+  gap: ${({ theme }) => theme.spacings.small};
 
   @media ${media.tablet} {
     flex-direction: row;
@@ -87,7 +81,7 @@ const ProjectCard = ({ project }) => {
       <ContentWrapper>
         <InfoWrapper>
           <CardHeading title={project.name} />
-          <Description>{project.description}</Description>
+          <BodyText text={project.description} />
           <TagsWrapper>
             {project.tags.map(tag => {
               return <Tag key={tag} tag={tag} />

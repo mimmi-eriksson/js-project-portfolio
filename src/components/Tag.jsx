@@ -1,11 +1,12 @@
 import styled from "styled-components"
-// import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const StyledTag = styled.li`
   background-color: ${({ theme }) => theme.colors.neutral};
   color: ${({ theme }) => theme.colors.secondary};
   padding: 2px 6px;
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: 1em;
   font-weight: 500;
 
   @media ${media.desktop} {

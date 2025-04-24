@@ -1,20 +1,21 @@
+import MainHeading from "../typhography/MainHeading"
+import SmallHeading from "../typhography/SmallHeading"
+import BodyText from "../typhography/BodyText"
 import styled from "styled-components"
-import theme from "../styles/theme.js"
 import media from "../styles/media.js"
 
 const SectionWrapper = styled.div`
-  padding: ${theme.spacings.large} ${theme.spacings.medium};
+  padding: ${({ theme }) => theme.spacings.large} ${({ theme }) => theme.spacings.medium};
 `
 const ContentWrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  gap: ${theme.spacings.medium};
-  font-family: ${theme.fonts.body};
+  gap: ${({ theme }) => theme.spacings.medium};
   margin-bottom: 3rem;
 
   @media ${media.desktop} {
-    margin: ${theme.spacings.xLarge};
+    margin: ${({ theme }) => theme.spacings.xLarge};
     flex-direction: row;
     gap: 6.25rem;
   }
@@ -24,38 +25,8 @@ const InfoWrapper = styled.div`
   flex-direction: column;
   align-items: flex-start;
   gap: 2rem;
-
-  p {
-    font-size: 1em;
-    font-weight: 400;
-  }
-  @media ${media.tablet} {
-    p {
-      font-size: 1.125em;
-    }
-  }
 `
-const SubHeading = styled.h3`
-  font-size: 1.5em;
-  font-weight: 500;
 
-  @media ${media.desktop} {
-    font-size: 1.875em;
-  }
-`
-const Heading = styled.h1`
-  font-family: ${theme.fonts.headings};
-  font-size: 3.75em;
-  font-weight: 700;
-  line-height: 100%;
-
-  @media ${media.tablet} {
-    font-size: 5em;
-  }
-  @media ${media.desktop} {
-    font-size: 6.25em;
-  }
-`
 const ImageWrapper = styled.div`
   position: relative;
   align-self: center;
@@ -63,7 +34,7 @@ const ImageWrapper = styled.div`
 const ImageBorder = styled.div`
   width: 300px;
   height: 300px;
-  background-color: ${theme.colors.primary};
+  background-color: ${({ theme }) => theme.colors.primary};
   clip-path: circle(50%);
 
   @media ${media.tablet} {
@@ -126,10 +97,10 @@ const IntroSection = () => {
         <ContentWrapper>
           <InfoWrapper>
             <div>
-              <SubHeading>I am Mimmi Eriksson</SubHeading>
-              <Heading>Frontend Developer</Heading>
+              <SmallHeading text={"I am Mimmi Eriksson"} />
+              <MainHeading text={"Frontend Developer"} />
             </div>
-            <p>I have a PhD in chemistry and a passion for problem-solving. With 10 years in R&D, I've developed strong skills in project management, teamwork, and creating impactful solutions. I currently focus on building accessible, responsive websites using modern technologies like React and TypeScript, and I'm eager to expand my knowledge into backend and full-stack development.</p>
+            <BodyText lineHeight="double" text="I have a PhD in chemistry and a passion for problem-solving. With 10 years in R&D, I've developed strong skills in project management, teamwork, and creating impactful solutions. I currently focus on building accessible, responsive websites using modern technologies like React and TypeScript, and I'm eager to expand my knowledge into backend and full-stack development." />
           </InfoWrapper>
           <ImageWrapper>
             <ImageBorder />
