@@ -3,6 +3,10 @@ import styled from "styled-components"
 const ButtonIcon = styled.img`
   width: 32px;
   height: 32px;
+
+  &:hover {
+    filter: invert(1)
+  }
 `
 
 const ButtonSocial = ({ link, icon, text }) => {

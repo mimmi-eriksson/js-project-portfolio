@@ -1,30 +1,59 @@
+import styled from "styled-components"
+import media from "../styles/media.js"
+
+const HeaderContent = styled.div`
+  background-color: ${({ theme }) => theme.colors.primary};
+  color: ${({ theme }) => theme.colors.secondary};
+  padding: ${({ theme }) => theme.spacings.small};
+  font-family: ${({ theme }) => theme.fonts.body};
+  font-size: 1em;
+  font-weight: 400;
+
+  @media ${media.desktop} {
+    font-size: 1.125em;
+  }
+`
+const NavContent = styled.ul`
+  display: flex;
+  justify-content: flex-end;
+`
+
+const NavLink = styled.a`
+  padding-left: 2rem;
+  text-underline-offset: ${({ theme }) => theme.spacings.xSmall};
+
+  &:hover {
+    text-decoration: underline; 
+  }
+`
+
 const Header = () => {
   return (
     <header>
-      <div>
+      <HeaderContent>
         <nav
           role="navigation"
           aria-label="Main menu"
         >
-          <ul>
+          <NavContent>
             <li>
-              <a href="#introSection">About</a>
+              <NavLink href="#introSection">About</NavLink>
             </li>
             <li>
-              <a href="#projectsSection">Projects</a>
+              <NavLink href="#projectsSection">Projects</NavLink>
             </li>
             <li>
-              <a href="#techSection">Tech</a>
+              <NavLink href="#techSection">Tech</NavLink>
             </li>
             <li>
-              <a href="#skillsSection">Skills</a>
+              <NavLink href="#skillsSection">Skills</NavLink>
             </li>
             <li>
-              <a href="#contactSection">Contact</a>
+              <NavLink href="#contactSection">Contact</NavLink>
             </li>
-          </ul>
+          </NavContent>
         </nav>
-      </div>
+      </HeaderContent>
     </header>
   )
 }

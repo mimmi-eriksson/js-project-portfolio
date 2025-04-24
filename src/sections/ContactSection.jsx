@@ -37,8 +37,10 @@ const InfoWrapper = styled.div`
 `
 
 const Link = styled.a`
-  text-decoration: none;
-  color: ${({ theme }) => theme.colors.secondary};
+
+  &:hover {
+    color: ${({ theme }) => theme.colors.neutral};
+  }
 
   @media ${media.mobile} {
     > * {
@@ -52,7 +54,6 @@ const Link = styled.a`
   }
 `
 const ButtonsWrapper = styled.ul`
-  list-style: none;
   display: flex;
   align-items: center;
   gap: 2rem;

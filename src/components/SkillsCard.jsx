@@ -9,7 +9,6 @@ const CardWrapper = styled.div`
   align-items: center;
 `
 const SkillsWrapper = styled.ul`
-  list-style: none;
   display: flex;
   flex-direction: column;
   text-align: center;

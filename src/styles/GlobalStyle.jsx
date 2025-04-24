@@ -9,7 +9,16 @@ const GlobalStyle = createGlobalStyle`
 
   html {
   scroll-behavior: smooth;
-}
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+  }
+
+  ul {
+    list-style: none;
+  }
 `
 
 export default GlobalStyle
