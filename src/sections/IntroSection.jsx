@@ -93,14 +93,13 @@ const ProfileImage = styled.img`
     height: 490px;
   }
 `
-const Arrow = styled.a`
+const ArrowLink = styled.a`
   display: block;
   text-align: center;
-
-  img {
-    margin-bottom: 32px;
-    animation: scrollAnimation 1s ease-out infinite alternate;
-  }
+`
+const Arrow = styled.img`
+  margin-bottom: 32px;
+  animation: scrollAnimation 1s ease-out infinite alternate;
 
   @keyframes scrollAnimation {
     0% {
@@ -140,9 +139,9 @@ const IntroSection = () => {
             <ProfileImage src="../assets/profile-picture.jpg" alt="profile picture" />
           </ImageWrapper>
         </ContentWrapper>
-        <Arrow href="#techSection">
-          <img src="assets/arrow.svg" alt="go to next section" />
-        </Arrow>
+        <ArrowLink href="#techSection">
+          <Arrow src="assets/arrow.svg" alt="go to next section" />
+        </ArrowLink>
       </SectionWrapper>
     </section>
   )

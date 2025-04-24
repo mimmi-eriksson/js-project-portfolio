@@ -1,11 +1,16 @@
 import ButtonLink from "./ButtonLink"
 import CardHeading from "../typhography/CardHeading.jsx"
 import Tag from "./Tag"
+import styled from "styled-components"
+
+const ArticleImage = styled.img`
+  width: 100%;
+`
 
 const ArticleCard = ({ article }) => {
   return (
     <article>
-      <img src={article.image} alt={article.altText} />
+      <ArticleImage src={article.image} alt={article.altText} />
       <div>
         <ul>
           <Tag tag={article.date} />
