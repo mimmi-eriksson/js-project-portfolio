@@ -9,6 +9,7 @@ const SectionWrapper = styled.section`
   padding: ${theme.spacings.xLarge} ${theme.spacings.small};
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4.5rem;
   
   h3 {
