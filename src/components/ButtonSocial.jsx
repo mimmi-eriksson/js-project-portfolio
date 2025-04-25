@@ -1,5 +1,13 @@
 import styled from "styled-components"
 
+const Link = styled.a`
+  &:focus-visible {
+    outline: 2px solid;
+    outline-offset: 5px;
+    border-radius: 2px;
+  }
+`
+
 const ButtonIcon = styled.img`
   width: 32px;
   height: 32px;
@@ -7,14 +15,20 @@ const ButtonIcon = styled.img`
   &:hover {
     filter: invert(1)
   }
+
+  &:focus-visible {
+    outline: 2px solid;
+    outline-offset: 5px;
+    border-radius: 2px;
+  }
 `
 
 const ButtonSocial = ({ link, icon, text }) => {
   return (
     <li>
-      <a href={link} target="_blank">
+      <Link href={link} target="_blank">
         <ButtonIcon src={icon} alt={text} />
-      </a>
+      </Link>
     </li>
   )
 }

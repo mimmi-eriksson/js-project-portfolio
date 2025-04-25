@@ -1,3 +1,4 @@
+import SkipLink from "./components/SkipLink"
 import Header from "./sections/Header"
 import IntroSection from "./sections/IntroSection"
 import TechSection from "./sections/TechSection"
@@ -12,7 +13,7 @@ import projects from "./data/projects.json"
 import skills from "./data/skills.json"
 import articles from "./data/articles.json"
 
-import GlobalStyle from "./styles/GlobalStyle.jsx"
+import GlobalStyle from "./styles/GlobalStyle"
 import { ThemeProvider } from "styled-components"
 import theme from "./styles/theme.js"
 
@@ -21,6 +22,7 @@ const App = () => {
     <>
       <ThemeProvider theme={theme}>
         <GlobalStyle />
+        <SkipLink />
         <Header />
         <IntroSection />
         <TechSection tech={tech.tech} />

@@ -42,6 +42,12 @@ const Link = styled.a`
     color: ${({ theme }) => theme.colors.neutral};
   }
 
+  &:focus-visible {
+    outline: 2px solid;
+    outline-offset: 5px;
+    border-radius: 2px;
+  }
+
   @media ${media.mobile} {
     > * {
       font-size: 1.25em;

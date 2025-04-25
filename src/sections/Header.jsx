@@ -2,8 +2,7 @@ import styled from "styled-components"
 import media from "../styles/media.js"
 
 const HeaderContent = styled.div`
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.secondary};
+  color: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.spacings.small};
   font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1em;
@@ -16,14 +15,20 @@ const HeaderContent = styled.div`
 const NavContent = styled.ul`
   display: flex;
   justify-content: flex-end;
+  gap: 2rem;
 `
 
 const NavLink = styled.a`
-  padding-left: 2rem;
   text-underline-offset: ${({ theme }) => theme.spacings.xSmall};
 
   &:hover {
     text-decoration: underline; 
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: 5px;
+    border-radius: 2px;
   }
 `
 

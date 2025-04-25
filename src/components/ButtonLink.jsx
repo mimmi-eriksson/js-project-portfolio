@@ -18,8 +18,13 @@ const StyledButton = styled.a`
     color: ${({ theme }) => theme.colors.secondary};
   }
 
-  &:hover img {
+  &:hover>img {
     filter: invert(1);
+  }
+
+  &:focus-visible {
+    outline: 2px solid ${({ theme }) => theme.colors.primary};
+    outline-offset: 5px;
   }
 
   @media ${media.desktop} {

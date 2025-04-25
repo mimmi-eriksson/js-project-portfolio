@@ -29,7 +29,6 @@ const ContentWrapper = styled.div`
     max-width: 1200px;
     flex-direction: row;
     align-items: center;
-    /* gap: 5rem; */
   }
   @media (${media.desktopXL}) {
     gap: 6.25rem; 
