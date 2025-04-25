@@ -9,7 +9,6 @@ const StyledButton = styled.a`
   align-items: center;
   gap: 7px;
   padding-right: 16px;
-  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1em;
   font-weight: 500;
 

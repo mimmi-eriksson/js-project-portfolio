@@ -4,7 +4,6 @@ import media from "../styles/media.js"
 const HeaderContent = styled.div`
   color: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.spacings.small};
-  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1em;
   font-weight: 400;
 

@@ -5,7 +5,6 @@ const StyledTag = styled.li`
   background-color: ${({ theme }) => theme.colors.neutral};
   color: ${({ theme }) => theme.colors.secondary};
   padding: 2px 6px;
-  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1em;
   font-weight: 500;
 

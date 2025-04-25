@@ -5,10 +5,6 @@ const theme = {
     ternary: "#F5F5F5",
     neutral: "#000"
   },
-  fonts: {
-    body: "Poppins, sans-serif",
-    headings: "Urbanist, sans-serif"
-  },
   spacings: {
     xSmall: "0.5rem",
     small: "1rem",

@@ -11,6 +11,14 @@ const GlobalStyle = createGlobalStyle`
   scroll-behavior: smooth;
   }
 
+  body {
+    font-family: "Poppins", sans-serif;
+  }
+
+  h1, h2 {
+    font-family: "Urbanist", "Poppins", sans-serif;
+  }
+
   a {
     text-decoration: none;
     color: inherit;

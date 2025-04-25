@@ -11,7 +11,6 @@ const StyledLink = styled.a`
   color: ${({ theme }) => theme.colors.secondary};
   z-index: 100;
   transition: top 0.3s;
-  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1em;
   font-weight: 500;
 

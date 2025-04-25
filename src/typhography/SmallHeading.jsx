@@ -2,7 +2,6 @@ import styled from "styled-components"
 import media from "../styles/media.js"
 
 const StyledHeading = styled.h3`
-  font-family: ${({ theme }) => theme.fonts.body};
   font-size: 1.5em;
   font-weight: 500;
   line-height: normal;
