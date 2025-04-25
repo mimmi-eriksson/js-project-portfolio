@@ -46,7 +46,7 @@ const TechSection = (tech) => {
           <SectionHeading title="Tech" />
           <SmallHeading text={tech.tech.join(", ")} />
         </ContentWrapper>
-        <ArrowLink mode="dark" link={"#projectsSection"} />
+        {/* <ArrowLink mode="dark" link={"#projectsSection"} /> */}
       </SectionWrapper>
     </section>
   )

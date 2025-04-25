@@ -13,13 +13,11 @@ const Link = styled.a`
   &:focus-visible>img {
     animation: scrollAnimation 1s ease-out infinite alternate;
   }
-
-
 `
 const Arrow = styled.img`
   filter: ${({ $mode }) => $mode === "dark" ? "brightness(0) invert(1)" : "none"};
   position: relative;
-  top: 0;
+  top: 0; 
   
   &:hover {
     animation: scrollAnimation 1s ease-out infinite alternate;

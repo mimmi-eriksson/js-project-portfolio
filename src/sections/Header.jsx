@@ -8,6 +8,12 @@ const HeaderContent = styled.div`
   font-size: 1em;
   font-weight: 400;
 
+  @media ${media.mobile} {
+    display: none;
+  }
+  @media ${media.tablet} {
+    display: block;
+  }
   @media ${media.desktop} {
     font-size: 1.125em;
   }
