@@ -2,15 +2,20 @@
   "tech": [
     "HTML",
     "CSS",
+    "Flexbox",
     "JavaScript ES6",
+    "TypeScript",
+    "JSX",
     "React",
+    "React Hooks",
     "Node.js",
     "Mongo DB",
     "Python",
-    "Web Accessibility",
     "APIs",
-    "Git",
-    "mob-programming",
-    "GitHub"
+    "Web Accessibility",
+    "Mob-programming",
+    "Pair-programming",
+    "Github",
+    "Git"
   ]
 }

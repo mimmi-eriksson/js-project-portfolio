@@ -7,7 +7,7 @@
         "CSS3",
         "Javascript ES6",
         "React",
-        "GitHub",
+        "Styled Components",
         "Python"
       ]
     },
@@ -15,7 +15,9 @@
       "title": "Toolbox",
       "skills": [
         "Figma",
-        "Slack"
+        "Slack",
+        "GitHub",
+        "Git"
       ]
     },
     {
