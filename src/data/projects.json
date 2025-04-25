@@ -1,7 +1,7 @@
 {
   "projects": [
     {
-      "name": "Business Site",
+      "name": "First project",
       "id": 1,
       "image": "../assets/business-site.png",
       "altText": "Business Site Thumbnail",
@@ -12,7 +12,7 @@
       ],
       "netlify": "https://starlight-unicorn-rentals.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-business-site",
-      "description": "A responsive business site with a working hamburger menu created to learn the basics of responsive web design, CSS Grid and Flexbox layout, and DOM manipulation."
+      "description": "My first web project created to learn the basics of responsive web design, CSS Grid and Flexbox layout, and DOM manipulation."
     },
     {
       "name": "Recipe App",
@@ -23,7 +23,7 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "APIs"
+        "API"
       ],
       "netlify": "https://mimmis-recipe-library.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-recipe-library",
@@ -39,7 +39,7 @@
         "CSS3",
         "JavaScript",
         "TypeScript",
-        "APIs"
+        "API"
       ],
       "netlify": "https://rainchecker.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-weather-app",
@@ -54,11 +54,27 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "Web Accessibility"
+        "WCAG"
       ],
       "netlify": "https://web-accessibility-quiz.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-accessibility",
       "description": "A quiz about web accessibility where common accessibility guidelines were followed. The site is user-friendly and works for everyone, including those using screen readers, keyboards, and other assistive technologies."
+    },
+    {
+      "name": "Portfolio",
+      "id": 5,
+      "image": "../assets/portfolio.png",
+      "altText": "Portfolio Thumbnail",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "Styled Components"
+      ],
+      "netlify": "https://mimmi-eriksson.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-portfolio",
+      "description": "The website you are looking at right now. Built in React and styled using the CSS library Styled Components."
     }
   ]
 }
