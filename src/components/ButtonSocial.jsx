@@ -13,7 +13,7 @@ const ButtonIcon = styled.img`
   height: 32px;
 
   &:hover {
-    filter: invert(1)
+    filter: invert(0.3)
   }
 
   &:focus-visible {

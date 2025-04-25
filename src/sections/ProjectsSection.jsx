@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection"
 import ProjectCard from "../components/ProjectCard"
 import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
@@ -32,7 +33,7 @@ const ProjectsSection = ({ projects }) => {
   // show latest project first
   const sortedProjects = projects.sort((a, b) => (b.id - a.id))
   return (
-    <section id="projectsSection">
+    <FadeInSection name="projectsSection">
       <SectionWrapper>
         <ContentWrapper>
           <SectionHeading title="Featured Projects" />
@@ -45,7 +46,7 @@ const ProjectsSection = ({ projects }) => {
           })}
         </ContentWrapper>
       </SectionWrapper>
-    </section>
+    </FadeInSection>
   )
 }
 

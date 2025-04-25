@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection"
 import SectionHeading from "../typhography/SectionHeading"
 import SmallHeading from "../typhography/SmallHeading"
 import ArrowLink from "../components/ArrowLink"
@@ -40,7 +41,7 @@ const ContentWrapper = styled.div`
 
 const TechSection = (tech) => {
   return (
-    <section id="techSection">
+    <FadeInSection name="techSection">
       <SectionWrapper>
         <ContentWrapper>
           <SectionHeading title="Tech" />
@@ -48,7 +49,7 @@ const TechSection = (tech) => {
         </ContentWrapper>
         {/* <ArrowLink mode="dark" link={"#projectsSection"} /> */}
       </SectionWrapper>
-    </section>
+    </FadeInSection>
   )
 }
 

@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection"
 import ArticleCard from "../components/ArticleCard"
 import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
@@ -45,7 +46,7 @@ const ArticlesSection = ({ articles }) => {
   // show latest article first
   const sortedArticles = articles.sort((a, b) => (b.id - a.id))
   return (
-    <section id="articlesSection">
+    <FadeInSection name="articlesSection">
       <SectionWrapper>
         <ContentWrapper>
           <SectionHeading title="My Words" />
@@ -60,7 +61,7 @@ const ArticlesSection = ({ articles }) => {
           </ArticlesWrapper>
         </ContentWrapper>
       </SectionWrapper>
-    </section>
+    </FadeInSection>
   )
 }
 

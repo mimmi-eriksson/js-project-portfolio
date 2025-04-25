@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection"
 import SkillsCard from "../components/SkillsCard"
 import SectionHeading from "../typhography/SectionHeading"
 import styled from "styled-components"
@@ -50,7 +51,7 @@ const StyledSkillCard = styled.div`
 
 const SkillsSection = ({ skills }) => {
   return (
-    <section id="skillsSection">
+    <FadeInSection name="skillsSection">
       <SectionWrapper>
         <SectionHeading title="Skills" />
         <ContentWrapper>
@@ -63,7 +64,7 @@ const SkillsSection = ({ skills }) => {
           })}
         </ContentWrapper>
       </SectionWrapper>
-    </section>
+    </FadeInSection>
   )
 }
 

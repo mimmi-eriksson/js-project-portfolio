@@ -1,3 +1,4 @@
+import FadeInSection from "./FadeInSection"
 import ButtonSocial from "../components/ButtonSocial"
 import SectionHeading from "../typhography/SectionHeading"
 import SmallHeading from "../typhography/SmallHeading"
@@ -39,7 +40,7 @@ const InfoWrapper = styled.div`
 const Link = styled.a`
 
   &:hover {
-    color: ${({ theme }) => theme.colors.neutral};
+    color: #c0c0c0;
   }
 
   &:focus-visible {
@@ -67,7 +68,7 @@ const ButtonsWrapper = styled.ul`
 
 const ContactSection = () => {
   return (
-    <section id="contactSection">
+    <FadeInSection name="contactSection">
       <SectionWrapper>
         <SectionHeading title="Let's Talk" />
         <ContentWrapper>
@@ -87,7 +88,7 @@ const ContactSection = () => {
           </ButtonsWrapper>
         </ContentWrapper>
       </SectionWrapper>
-    </section>
+    </FadeInSection>
   )
 }
 
