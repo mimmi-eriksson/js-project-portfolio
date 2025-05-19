@@ -75,6 +75,43 @@
       "netlify": "https://mimmi-eriksson.netlify.app/",
       "github": "https://github.com/mimmi-eriksson/js-project-portfolio",
       "description": "The website you are looking at right now. Built in React and styled using the CSS library Styled Components."
+    },
+    {
+      "name": "Happy Thoughts",
+      "id": 6,
+      "image": "../assets/happy-thoughts.png",
+      "altText": "Happy Thoughts Thumbnail",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "React hooks",
+        "TailwindCSS",
+        "API"
+      ],
+      "netlify": "https://think-happy.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-happy-thoughts",
+      "description": "A small messaging app built in React to learn useState and useEffect hooks. The app fetches and posts messages to an API. Styled using tailwindCSS."
+    },
+    {
+      "name": "Movie App",
+      "id": 7,
+      "image": "../assets/movies.png",
+      "altText": "Movie App Thumbnail",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "React.js",
+        "React hooks",
+        "React Router",
+        "TailwindCSS",
+        "API"
+      ],
+      "netlify": "",
+      "github": "",
+      "description": "A dynamic multi-page application built in React and using React Router. The app displays a page with a list movies fetched from an external API, and then links to a movie detail page when when a movie is clicked."
     }
   ]
 }

@@ -29,7 +29,6 @@ const App = () => {
           projects={projects.projects}
         />
         <SkillsSection skills={skills.skills} />
-        <ArticlesSection articles={articles.articles} />
         <ContactSection />
       </ThemeProvider>
     </>

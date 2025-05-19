@@ -6,8 +6,8 @@
         "HTML5",
         "CSS3",
         "Javascript ES6",
+        "Typescript",
         "React",
-        "Styled Components",
         "Python"
       ]
     },
@@ -17,20 +17,25 @@
         "Figma",
         "Slack",
         "GitHub",
-        "Git"
+        "Git",
+        "Postman"
       ]
     },
     {
       "title": "Upcoming",
       "skills": [
-        "Node.js"
+        "Node.js",
+        "Mongo DB"
       ]
     },
     {
       "title": "Other",
       "skills": [
         "Agile methodology",
-        "Project management"
+        "Project management",
+        "Teamwork",
+        "Analysis",
+        "Problem solving"
       ]
     }
   ]

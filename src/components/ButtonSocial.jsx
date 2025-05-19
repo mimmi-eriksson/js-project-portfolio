@@ -11,6 +11,7 @@ const Link = styled.a`
 const ButtonIcon = styled.img`
   width: 32px;
   height: 32px;
+  filter: invert(1);
 
   &:hover {
     filter: invert(0.3)

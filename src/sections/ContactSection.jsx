@@ -7,8 +7,9 @@ import media from "../styles/media.js"
 
 const SectionWrapper = styled.div`
   min-height: 100vh;
-  background-color: ${({ theme }) => theme.colors.primary};
-  color: ${({ theme }) => theme.colors.secondary};
+  /* background-color: ${({ theme }) => theme.colors.primary}; */
+  /* color: ${({ theme }) => theme.colors.secondary}; */
+  color: ${({ theme }) => theme.colors.primary};
   padding: ${({ theme }) => theme.spacings.xLarge} ${({ theme }) => theme.spacings.small};
   display: flex;
   flex-direction: column;
@@ -17,6 +18,7 @@ const SectionWrapper = styled.div`
 `
 
 const ContentWrapper = styled.div`
+  color: black;
   display: flex;
   flex-direction: column;
   gap: ${({ theme }) => theme.spacings.large};
