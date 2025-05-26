@@ -69,7 +69,7 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "React.js",
+        "React",
         "Styled Components"
       ],
       "netlify": "https://mimmi-eriksson.netlify.app/",
@@ -85,7 +85,7 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "React.js",
+        "React",
         "React hooks",
         "TailwindCSS",
         "API"
@@ -103,7 +103,7 @@
         "HTML5",
         "CSS3",
         "JavaScript",
-        "React.js",
+        "React",
         "React hooks",
         "React Router",
         "TailwindCSS",
@@ -112,6 +112,24 @@
       "netlify": "",
       "github": "",
       "description": "A dynamic multi-page application built in React and using React Router. The app displays a page with a list movies fetched from an external API, and then links to a movie detail page when when a movie is clicked."
+    },
+    {
+      "name": "To Do App",
+      "id": 8,
+      "image": "../assets/todo.png",
+      "altText": "To Do App Thumbnail",
+      "tags": [
+        "HTML5",
+        "CSS3",
+        "JavaScript",
+        "TypeScript",
+        "React",
+        "TailwindCSS",
+        "Zustand"
+      ],
+      "netlify": "https://task-completed.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-todo",
+      "description": "A to do app build in React using Zustand for state management. Users are able to add and remove tasks, list tasks, and toggle whether a task is done or not."
     }
   ]
 }
