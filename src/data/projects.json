@@ -109,8 +109,8 @@
         "TailwindCSS",
         "API"
       ],
-      "netlify": "",
-      "github": "",
+      "netlify": "https://movieblaster.netlify.app/",
+      "github": "https://github.com/mimmi-eriksson/js-project-movies",
       "description": "A dynamic multi-page application built in React and using React Router. The app displays a page with a list movies fetched from an external API, and then links to a movie detail page when when a movie is clicked."
     },
     {
